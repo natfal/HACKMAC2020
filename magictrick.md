@@ -1,13 +1,30 @@
 # Time for a Little Magic Trick
 
-Trying to open Joker.db in database software reveals it's not actually a database. To see what is actually in the `.db` file 
+Trying to open Joker.db in database software reveals it's not actually a database. 
+
+![opening in database software](magictrick/1.png)
+
+To see what is actually in the `.db` file, we can run
 
 ```bash
 $ binwalk Joker.db
 ```  
-will reveal jpg data in database file.  
-```
+This will reveal the true contents of the file
+
+![binwalk](magictrick/2.png)
+
+As we can see, the file has a JPEG image hidden within. To see the actual image, we need to extract it from the carrier file 
+
+```bash
 $   binwalk -D='.*' Joker.db
 ```
 
-extracts jpg image of a joker card with flag written at the top.
+This will put the contents of the file in a new folder
+
+![extracted files](magictrick/3.png)
+
+From here, we can simply open the file with an image viewer of choice
+
+![flag](magictrick/4.png)
+
+And we have our flag!

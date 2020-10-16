@@ -35,7 +35,7 @@
 ### Forensics
 
 - All The Wrappers
-- Time for a Little Magic Trick
+- [Time for a Little Magic Trick](magictrick.md)
 
 ### OSINT
 
