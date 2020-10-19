@@ -16,6 +16,7 @@ This gives us an uncompressed file. We'll run `file` again to see what to do wit
 Running `cat` to display the contents of the file reveals it is indeed a hexdump. 
 
 ![hexdump](3.png)
+
 To reverse the hexdump into what appears to be binary, `xxd` with the `-r` option will give us a file with the original data:
 
 ```bash
