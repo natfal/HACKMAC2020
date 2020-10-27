@@ -34,7 +34,7 @@
 
 ### Forensics
 
-- All The Wrappers
+- [All The Wrappers](allthewrappers/allthewrappers.md)
 - [Time for a Little Magic Trick](magictrick/magictrick.md)
 
 ### OSINT
@@ -43,4 +43,4 @@
 
 ### Misc
 
-- Where's Wally
+- [Where's Wally](whereswally/whereswally.md)
