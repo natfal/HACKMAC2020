@@ -23,10 +23,10 @@
 ### Hack the CISO
 
 - Connect home
-- Intelli-telnet
+- [Intelli-telnet](intellitelnet/intellitelnet.md)
 - Remote access 1
 - Remote access 2
-- RTSP that thing
+- [RTSP that thing - missing media](rtspthatthing/rtspthatthing.md)
 - Smart camera secret file
 
 
