@@ -24,8 +24,8 @@
 
 - [Connect home](connecthome/connecthome.md)
 - [Intelli-telnet](intellitelnet/intellitelnet.md)
-- Remote access 1
-- Remote access 2
+- [Remote access 1](remoteaccess1/remoteaccess1.md)
+- [Remote access 2](remoteaccess2/remoteaccess2.md)
 - [RTSP that thing - missing media](rtspthatthing/rtspthatthing.md)
 - [Smart camera secret file - missing media](smartcamera/smartcamera.md)
 
