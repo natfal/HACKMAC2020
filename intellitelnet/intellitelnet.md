@@ -12,4 +12,7 @@ A quick google search shows reports of a telnet password for this device being
 zmodo19820816
 ```
 
-Attempting to connect to the host with this password shows that this is the correct password, so the flag is `hackmac{zmodo19820816}`.
+Attempting to connect to the host with this password shows that this is the correct password, so the flag is: 
+```
+hackmac{zmodo19820816}
+```
