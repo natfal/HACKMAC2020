@@ -28,3 +28,6 @@ From here, we can simply open the file with an image viewer of choice
 ![flag](4.png)
 
 And we have our flag!
+```
+hackmac{did_i_trick_ya}
+```
