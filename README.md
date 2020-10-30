@@ -4,9 +4,9 @@
 
 ### OSINT
 
-- First day at uni
+- [First day at uni](firstdayatuni/firstdayatuni.md)
 - Where's jeffery
-- To Kill a Blue Bird
+- [To Kill a Blue Bird](tokillabluebird/tokillabluebird.md)
 - Postman Pat knows everything about 13 Rotten Apples
 - The Reality Deep Down in our Hearts
 - Uh oh
