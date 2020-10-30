@@ -27,7 +27,7 @@
 - Remote access 1
 - Remote access 2
 - [RTSP that thing - missing media](rtspthatthing/rtspthatthing.md)
-- Smart camera secret file
+- [Smart camera secret file - missing media](smartcamera/smartcamera.md)
 
 
 ## Bailey
