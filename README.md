@@ -1,5 +1,7 @@
 # HACKMAC2020 - Universal Cereal Bus
 
+[CLICK HERE FOR THE FULL REPORT](report.md)
+
 ### Crypto
 
 - [4 Stage = 4x Better](4stage=4xbetter/4stage=4xbetter.md)
