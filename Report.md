@@ -2,8 +2,6 @@
 
 ## Table of Contents
 
-- [Report - Universal Cereal Bus](#report---universal-cereal-bus)
-  - [Table of Contents](#table-of-contents)
 - [4 Stage = 4x Better](#4-stage--4x-better)
 - [All The Wrappers](#all-the-wrappers)
 - [Ancient Rome](#ancient-rome)
@@ -15,8 +13,6 @@
 - [Keep Me Posted](#keep-me-posted)
 - [Postman Pat knows everything about 13 Rotten Apples](#postman-pat-knows-everything-about-13-rotten-apples)
 - [Remote Access 1](#remote-access-1)
-  - [Solve with hint](#solve-with-hint)
-  - [Intended solution](#intended-solution)
 - [Remote Access 2](#remote-access-2)
 - [RTSP That Thing](#rtsp-that-thing)
 - [Smart Camera Secret File](#smart-camera-secret-file)
