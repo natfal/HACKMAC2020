@@ -18,7 +18,7 @@
 ### Crypto
 
 - [Ancient Rome](ancientrome/ancientrome.md)
-- 4 stage = 4x better
+- [4 Stage = 4x Better](4stage=4xbetter/4stage=4xbetter.md)
 
 ### Hack the CISO
 
