@@ -7,16 +7,27 @@
 - [4 Stage = 4x Better](#4-stage--4x-better)
 - [All The Wrappers](#all-the-wrappers)
 - [Ancient Rome](#ancient-rome)
+- [Ball Goes Brrrr](#ball-goes-brrrr)
+- [Change the World](#change-the-world)
 - [Connect Home](#connect-home)
+- [First Day at Uni!](#first-day-at-uni)
 - [Intelli-telnet](#intelli-telnet)
+- [Keep Me Posted](#keep-me-posted)
+- [Postman Pat knows everything about 13 Rotten Apples](#postman-pat-knows-everything-about-13-rotten-apples)
 - [Remote Access 1](#remote-access-1)
   - [Solve with hint](#solve-with-hint)
   - [Intended solution](#intended-solution)
 - [Remote Access 2](#remote-access-2)
 - [RTSP That Thing](#rtsp-that-thing)
 - [Smart Camera Secret File](#smart-camera-secret-file)
+- [The Reality Deep Down in our Hearts](#the-reality-deep-down-in-our-hearts)
 - [Time for a Little Magic Trick](#time-for-a-little-magic-trick)
+- [To Kill a Blue Bird](#to-kill-a-blue-bird)
+- [Uh Oh](#uh-oh)
+- [Way Back Home](#way-back-home)
+- [Where's Jeffery?](#wheres-jeffery)
 - [Where's Wally](#wheres-wally)
+- [Work work work work work](#work-work-work-work-work)
 
 
 # 4 Stage = 4x Better
@@ -195,6 +206,69 @@ hackmac{hackerman}
 ```
 
 
+# Ball Goes Brrrr
+
+We knew that Jeffery's twitter gave us insight into his love for basketball. Checking his following again, we see there is only one Australian account:
+
+![1](ballgoesbrrrr/1.jpg)
+
+Initially, we tried `sydney` as this was the location on their twitter page, however this did not work.
+
+Going to their linked website:
+
+https://parramattawildcats.basketball/ubl
+
+Revealed the account was for the `Parramatta Wild Cats`.
+
+However, `parramatta` also did not work.
+
+Scrolling down, we found out they were playing at `Lidcombe`:
+
+![2](ballgoesbrrrr/2.jpg)
+
+However, this also did not work. Thankfully, trying `Auburn` worked.
+
+```
+hackmac{auburn}
+```
+
+# Change the World
+
+Checking the same image from the challenge `Keep Me Posted`:
+
+![1](changetheworld/1.jpg)
+
+We see there is a Google Doc file open on the laptop, and for the most part, the link is visible:
+
+![2](changetheworld/2.jpg)
+
+```
+1VdtzR1sjB5qkxhJZ9AJg*oeyrYvw_*JFKuCmRAD7kLU
+```
+The two `*` signs resemble characters that could be `lowercase i`, `uppercase i`, or `lowercase l`
+
+This meant 6 possible permutations. A quick Excel concatenation:
+
+```
+=CONCATENATE(A1,B1,C1,D1,E1,F1)
+```
+
+![3](changetheworld/3.jpg)
+
+After trying some links, one worked:
+
+```
+https://docs.google.com/document/d/1VdtzR1sjB5qkxhJZ9AJgioeyrYvw_lJFKuCmRAD7kLU/edit
+```
+
+Ctrl+F for `hackmac{` led to a flag in the hackmac format:
+
+![4](changetheworld/4.jpg)
+
+```
+hackmac{you_should_not_be_here}
+```
+
 
 # Connect Home
 
@@ -205,7 +279,41 @@ The flag for this challenge is the IP address given in the challenge description
 ```
 hackmac{137.111.189.100}
 ```
+# First Day at Uni!
 
+We are given Jeffery's instagram page:
+```
+https://www.instagram.com/j3ff3ryth3r3f3r33/
+```
+He has about 6 posts that appear to be relevant to MQ:
+
+![1](firstdayatuni/1.jpg)
+
+By looking at each one, we find that he is 2 minutes late to class in this one:
+
+![2](firstdayatuni/2.jpg)
+
+![3](firstdayatuni/3.jpg)
+
+By inspecting element, we see this was taken at around 2:00am on the 23rd of September. However, it definitely doesn't look like it's 2:00am (and it'd be unlikely his class would be on then). A google search shows that this time is likely to be GMT, 11 hours behind AEST (since the picture was before daylight savings, we don't have to worry about AEDT).
+
+This means his class started at 1PM.
+
+It's like to assume it either finished at 2PM or 3PM, however, another post shows him leaving class:
+
+![4](firstdayatuni/4.jpg)
+
+By inspecting element again, we see it was an hour class, and he finished at 2PM.
+
+![5](firstdayatuni/5.jpg)
+
+Additionally, this looks like it's around 9 Wallys Walk, and since we're told to use the old building number, we know he's had class at E6A.
+
+Arranging all this information into the flag format, we know the flag is:
+
+```
+hackmac{E6A_1PM_2PM}
+```
 
 
 # Intelli-telnet
@@ -227,6 +335,54 @@ Attempting to connect to the host with this password shows that this is the corr
 hackmac{zmodo19820816}
 ```
 
+
+
+# Keep Me Posted
+
+Originally, we could not see many of Jeffery's twitter posts, but eventually, we were able to see this post:
+
+![1](keepmeposted/1.jpg)
+
+We see a wall of post-it notes, where one has a flag in the hackmac format:
+
+![2](keepmeposted/2.jpg)
+
+```
+hackmac{I_AM_INVISIBLE}
+```
+
+# Postman Pat knows everything about 13 Rotten Apples
+
+On Jeffery's Twitter we can see he has a follower called "Aaron Boolon" who is also a fake account created for Hackmac:
+
+![1](postmanpat/1.jpg)
+
+We could see his first post referred to `"13 ROTten Apples"`, so we knew it was likely to be related to this challenge.
+
+![2](postmanpat/2.jpg)
+
+We could see an encrypted message in the form of a hyperlink (due to the `://`)
+
+Using Cyberchef, and decoding ROT13:
+
+![3](postmanpat/3.jpg)
+
+We get a new hackmac website:
+
+```
+http://badboys.hackmac.xyz
+```
+On the website, we see an option that says `flag`:
+
+![4](postmanpat/4.jpg)
+
+Of course, we click on this and we get something in the hackmac flag format:
+
+![5](postmanpat/5.jpg)
+
+```
+hackmac{hello_mr_postman}
+```
 
 
 
@@ -313,6 +469,32 @@ And the flag is printed to the terminal!
 
 
 
+
+
+# The Reality Deep Down in our Hearts
+
+The `posts` page on the badboys website shows us this image and description:
+
+![1](therealitydeepdowninourhearts/1.jpg)
+
+It makes reference to a restaurant called `Gu Thai Cuisine`. Although we don't see that name in the Instagram page, we know Jeffery went to two places that serve Asian food. 
+
+As one of the posts says `Sushi Hotaru`, by elimination, we figure out it is most likely referring to the other post made on the 27th of September:
+
+![2](therealitydeepdowninourhearts/2.jpg)
+
+We inspect element and check this would still be on the same date in AEST time:
+
+![3](therealitydeepdowninourhearts/3.jpg)
+
+```
+hackmac{27_September}
+```
+
+
+
+
+
 # Time for a Little Magic Trick
 
 Trying to open Joker.db in database software reveals it's not actually a database. 
@@ -347,6 +529,102 @@ And we have our flag!
 hackmac{did_i_trick_ya}
 ```
 
+# To Kill a Blue Bird
+
+We knew it was likely that Jeffery wouldn't only have an instagram page, and so we checked twitter right away. We tried:
+```
+https://twitter.com/j3ff3ryth3r3f3r33/
+```
+which gave us no results.
+
+However, by looking up `j3ff3ryth3r3f3r33` in the Twitter search bar, we got this page:
+
+![1](tokillabluebird/1.jpg)
+
+A quick look at his followers shows the majority of pages are related to basketball:
+
+![2](tokillabluebird/2.jpg)
+
+Hence we presumed it is likely he plays basketball.
+
+NOTE: A google search for 'Blue Bird' didn't reveal anything particularly insightful, and to this day, I'm not too sure on its relation to the challenge (although I believe it is possible it could have been a hint).
+
+```
+hackmac{basketball}
+```
+
+
+# Uh Oh
+
+Checking the same image from the challenge `'The Reality Deep Down in our Hearts'`:
+
+![1](uhoh/1.jpg)
+
+We can see this photo has obviously been photoshopped, and it is likely we will be looking for a car that looks like the one in the photo (without a broken windshield), presumably in Google maps street view.
+
+A Google maps search for a place called `Gu Thai Cuisine` on `childs`:
+
+![2](uhoh/2.jpg)
+
+Reveals there is a restaurant in Chipping Norton on Childs Rd:
+
+![3](uhoh/3.jpg)
+
+We realise the location is likely to be on this street, and so we look for a vehicle resembling the one in the picture. We eventually find a vehicle in front of a house made from the same material as shown in the picture, at `86 Childs Rd, Chipping Norton`:
+
+![4](uhoh/4.jpg)
+
+We rearrange this information to fit the flag format provided.
+
+```
+hackmac{86_childs_rd_chipping_norton}
+```
+
+
+# Way Back Home
+
+In this challenge, we knew the title probably referred to using the `Wayback Machine`:
+
+```
+https://web.archive.org
+```
+We tried checking Jeffery's Twitter, Instagram, LinkedIn, Aaron's Twitter (and just about every other thing we had found up until this point), until we checked the badboys website:
+
+![1](waybackhome/1.jpg)
+
+Checking this result immediately gave us a flag in the hackmac format:
+
+![2](waybackhome/2.jpg)
+
+```
+hackmac{jordan_has_my_family_send_help}
+```
+
+# Where's Jeffery?
+
+From one of the instagram posts, we knew Jeffery had replied to a message with a reference to a Snapchat account:
+
+![1](wheresjeffery/1.jpg)
+
+From here, we went to:
+```
+https://drive.google.com/file/d/1KxEopR-EjLyZf9MHpcUtvzaBjEPu_xLR/view
+```
+And had access to his snapcode:
+
+![2](wheresjeffery/2.jpg)
+
+We created a snapchat account, scanned the snapcode on mobile, and did get added right away. 
+
+Originally we tried sending Jeffery messages, but received a sticker telling us to "go away" as he only talks to his real friends.
+
+However, when we realised Snapchat had a map with friends' locations, we could see he was in Dee Why.
+
+NOTE: Unfortunately, we did not get screenshots on mobile (and could not retrospectively access the snap map).
+
+```
+hackmac{deewhy}
+```
 
 
 # Where's Wally
@@ -365,4 +643,23 @@ By rearranging these tiles with a graphic editor, we can find the flag
 
 ```
 hackmac{h3r3_I_aM_hAck3Rs}
+```
+
+
+# Work work work work work
+
+This flag asks us to find out where Jeffery works. From the instagram page, we know that Jeffery's full name is `Jeffery Emmanuel Lee`:
+
+![1](workworkworkworkwork/1.jpg)
+
+It is likely that he would put his occupation on either a Facebook or LinkedIn page.
+
+The first result we get when searching `Jeffery Lee` on LinkedIn gives us a fake person for hackmac:
+
+![2](workworkworkworkwork/2.jpg)
+
+We see a flag in the hackmac format.
+
+```
+hackmac{yes_i_sell_stuff_hehe}
 ```
