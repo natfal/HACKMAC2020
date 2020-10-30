@@ -16,6 +16,8 @@ A quick look at his followers shows the majority of pages are related to basketb
 
 Hence we presumed it is likely he plays basketball.
 
+NOTE: A google search for 'Blue Bird' didn't reveal anything particularly insightful, and to this day, I'm not too sure on its relation to the challenge (although I believe it is possible it could have been a hint).
+
 ```
 hackmac{basketball}
 ```
