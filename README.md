@@ -22,7 +22,7 @@
 
 ### Hack the CISO
 
-- Connect home
+- [Connect home](connecthome/connecthome.md)
 - [Intelli-telnet](intellitelnet/intellitelnet.md)
 - Remote access 1
 - Remote access 2
