@@ -8,12 +8,12 @@
 - [Where's jeffery](wheresjeffery/wheresjeffery.md)
 - [To Kill a Blue Bird](tokillabluebird/tokillabluebird.md)
 - [Postman Pat knows everything about 13 Rotten Apples](postmanpat/postmanpat.md)
-- The Reality Deep Down in our Hearts
-- Uh oh
-- Work work work work work
-- Keep Me Posted
-- Ball goes BRRRR
-- Way Back Home
+- [The Reality Deep Down in our Hearts](therealitydeepdowninourhearts/therealitydeepdowninourhearts.md)
+- [Uh oh](uhoh/uhoh.md)
+- [Work work work work work](workworkworkworkwork/workworkworkworkwork.md)
+- [Keep Me Posted](keepmeposted/keepmeposted.md)
+- [Ball goes BRRRR](ballgoesbrrrr/ballgoesbrrrr.md)
+- [Way Back Home](waybackhome/waybackhome.md)
 
 ### Crypto
 
@@ -39,7 +39,7 @@
 
 ### OSINT
 
-- Change the world
+- [Change the world](changetheworld/changetheworld.md)
 
 ### Misc
 
