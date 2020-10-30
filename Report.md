@@ -7,6 +7,7 @@
 - [4 Stage = 4x Better](#4-stage--4x-better)
 - [All The Wrappers](#all-the-wrappers)
 - [Ancient Rome](#ancient-rome)
+<<<<<<< HEAD
 - [Ball Goes Brrrr](#ball-goes-brrrr)
 - [Change the World](#change-the-world)
 - [Connect Home](#connect-home)
@@ -14,12 +15,17 @@
 - [Intelli-telnet](#intelli-telnet)
 - [Keep Me Posted](#keep-me-posted)
 - [Postman Pat knows everything about 13 Rotten Apples](#postman-pat-knows-everything-about-13-rotten-apples)
+=======
+- [Connect Home](#connect-home)
+- [Intelli-telnet](#intelli-telnet)
+>>>>>>> 20eba4f3ce54afb133d4fd50bbfbe33caebadba2
 - [Remote Access 1](#remote-access-1)
   - [Solve with hint](#solve-with-hint)
   - [Intended solution](#intended-solution)
 - [Remote Access 2](#remote-access-2)
 - [RTSP That Thing](#rtsp-that-thing)
 - [Smart Camera Secret File](#smart-camera-secret-file)
+<<<<<<< HEAD
 - [The Reality Deep Down in our Hearts](#the-reality-deep-down-in-our-hearts)
 - [Time for a Little Magic Trick](#time-for-a-little-magic-trick)
 - [To Kill a Blue Bird](#to-kill-a-blue-bird)
@@ -28,6 +34,10 @@
 - [Where's Jeffery?](#wheres-jeffery)
 - [Where's Wally](#wheres-wally)
 - [Work work work work work](#work-work-work-work-work)
+=======
+- [Time for a Little Magic Trick](#time-for-a-little-magic-trick)
+- [Where's Wally](#wheres-wally)
+>>>>>>> 20eba4f3ce54afb133d4fd50bbfbe33caebadba2
 
 
 # 4 Stage = 4x Better
@@ -206,6 +216,7 @@ hackmac{hackerman}
 ```
 
 
+<<<<<<< HEAD
 # Ball Goes Brrrr
 
 We knew that Jeffery's twitter gave us insight into his love for basketball. Checking his following again, we see there is only one Australian account:
@@ -269,6 +280,8 @@ Ctrl+F for `hackmac{` led to a flag in the hackmac format:
 hackmac{you_should_not_be_here}
 ```
 
+=======
+>>>>>>> 20eba4f3ce54afb133d4fd50bbfbe33caebadba2
 
 # Connect Home
 
@@ -279,6 +292,7 @@ The flag for this challenge is the IP address given in the challenge description
 ```
 hackmac{137.111.189.100}
 ```
+<<<<<<< HEAD
 # First Day at Uni!
 
 We are given Jeffery's instagram page:
@@ -314,6 +328,9 @@ Arranging all this information into the flag format, we know the flag is:
 ```
 hackmac{E6A_1PM_2PM}
 ```
+=======
+
+>>>>>>> 20eba4f3ce54afb133d4fd50bbfbe33caebadba2
 
 
 # Intelli-telnet
@@ -337,6 +354,7 @@ hackmac{zmodo19820816}
 
 
 
+<<<<<<< HEAD
 # Keep Me Posted
 
 Originally, we could not see many of Jeffery's twitter posts, but eventually, we were able to see this post:
@@ -385,6 +403,8 @@ hackmac{hello_mr_postman}
 ```
 
 
+=======
+>>>>>>> 20eba4f3ce54afb133d4fd50bbfbe33caebadba2
 
 # Remote Access 1
 
@@ -469,6 +489,7 @@ And the flag is printed to the terminal!
 
 
 
+<<<<<<< HEAD
 
 
 # The Reality Deep Down in our Hearts
@@ -495,6 +516,8 @@ hackmac{27_September}
 
 
 
+=======
+>>>>>>> 20eba4f3ce54afb133d4fd50bbfbe33caebadba2
 # Time for a Little Magic Trick
 
 Trying to open Joker.db in database software reveals it's not actually a database. 
@@ -529,6 +552,7 @@ And we have our flag!
 hackmac{did_i_trick_ya}
 ```
 
+<<<<<<< HEAD
 # To Kill a Blue Bird
 
 We knew it was likely that Jeffery wouldn't only have an instagram page, and so we checked twitter right away. We tried:
@@ -625,6 +649,8 @@ NOTE: Unfortunately, we did not get screenshots on mobile (and could not retrosp
 ```
 hackmac{deewhy}
 ```
+=======
+>>>>>>> 20eba4f3ce54afb133d4fd50bbfbe33caebadba2
 
 
 # Where's Wally
@@ -643,6 +669,7 @@ By rearranging these tiles with a graphic editor, we can find the flag
 
 ```
 hackmac{h3r3_I_aM_hAck3Rs}
+<<<<<<< HEAD
 ```
 
 
@@ -662,4 +689,6 @@ We see a flag in the hackmac format.
 
 ```
 hackmac{yes_i_sell_stuff_hehe}
+=======
+>>>>>>> 20eba4f3ce54afb133d4fd50bbfbe33caebadba2
 ```
