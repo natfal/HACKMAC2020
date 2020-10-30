@@ -1,6 +1,7 @@
 # Report - Universal Cereal Bus
 
 ## Table of Contents
+
 - [Report - Universal Cereal Bus](#report---universal-cereal-bus)
   - [Table of Contents](#table-of-contents)
 - [4 Stage = 4x Better](#4-stage--4x-better)
@@ -8,20 +9,14 @@
 - [Ancient Rome](#ancient-rome)
 - [Connect Home](#connect-home)
 - [Intelli-telnet](#intelli-telnet)
-- [Time for a Little Magic Trick](#time-for-a-little-magic-trick)
 - [Remote Access 1](#remote-access-1)
   - [Solve with hint](#solve-with-hint)
   - [Intended solution](#intended-solution)
 - [Remote Access 2](#remote-access-2)
 - [RTSP That Thing](#rtsp-that-thing)
 - [Smart Camera Secret File](#smart-camera-secret-file)
+- [Time for a Little Magic Trick](#time-for-a-little-magic-trick)
 - [Where's Wally](#wheres-wally)
-
-- [Remote Access 2](#remote-access-2)
-- [RTSP That Thing](#rtsp-that-thing)
-- [Smart Camera Secret File](#smart-camera-secret-file)
-- [Where's Wally](#wheres-wally)
-
 
 
 # 4 Stage = 4x Better
@@ -234,41 +229,6 @@ hackmac{zmodo19820816}
 
 
 
-# Time for a Little Magic Trick
-
-Trying to open Joker.db in database software reveals it's not actually a database. 
-
-![opening in database software](magictrick/1.png)
-
-To see what is actually in the `.db` file, we can run
-
-```bash
-$ binwalk Joker.db
-```  
-This will reveal the true contents of the file
-
-![binwalk](magictrick/2.png)
-
-As we can see, the file has a JPEG image hidden within. To see the actual image, we need to extract it from the carrier file 
-
-```bash
-$   binwalk -D='.*' Joker.db
-```
-
-This will put the contents of the file in a new folder
-
-![extracted files](magictrick/3.png)
-
-From here, we can simply open the file with an image viewer of choice
-
-![flag](magictrick/4.png)
-
-And we have our flag!
-```
-hackmac{did_i_trick_ya}
-```
-
-
 
 # Remote Access 1
 
@@ -350,6 +310,42 @@ $ cat flag.txt
 ```
 
 And the flag is printed to the terminal!
+
+
+
+# Time for a Little Magic Trick
+
+Trying to open Joker.db in database software reveals it's not actually a database. 
+
+![opening in database software](magictrick/1.png)
+
+To see what is actually in the `.db` file, we can run
+
+```bash
+$ binwalk Joker.db
+```  
+This will reveal the true contents of the file
+
+![binwalk](magictrick/2.png)
+
+As we can see, the file has a JPEG image hidden within. To see the actual image, we need to extract it from the carrier file 
+
+```bash
+$   binwalk -D='.*' Joker.db
+```
+
+This will put the contents of the file in a new folder
+
+![extracted files](magictrick/3.png)
+
+From here, we can simply open the file with an image viewer of choice
+
+![flag](magictrick/4.png)
+
+And we have our flag!
+```
+hackmac{did_i_trick_ya}
+```
 
 
 
