@@ -12,6 +12,6 @@ We can do an nmap scan of the network to find hosts with this port open.
 Now that we have the host address, we can try some of the common URLs in VLC to get the RTSP stream.
 
 ```
-rtsp://192.168.100.210:8000/udp/av0_0
+rtsp://192.168.100.210:10554/udp/av0_0
 ```
 This gives us a video stream, and the flag is written on a piece of paper.
